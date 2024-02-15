@@ -11,7 +11,7 @@ request('https://swapi-api.alx-tools.com/api/films/' + film, function (error, re
       character => new Promise((resolve, reject) => {
         request(character, function (error, response, body) {
           if (error) {
-            reject(error)
+            reject(error);
           } else {
             resolve(JSON.parse(body).name);
           }
@@ -22,5 +22,4 @@ request('https://swapi-api.alx-tools.com/api/films/' + film, function (error, re
       .then(n => console.log(n.join('\n')))
       .catch(err => console.log(err));
   }
-
 });
