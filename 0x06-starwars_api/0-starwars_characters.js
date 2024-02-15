@@ -5,7 +5,7 @@ request('https://swapi-api.alx-tools.com/api/films/3', function (error, response
   if (error) {
     console.error('Error:', error);
   } else {
-    console.log(response["name"]);
+    console.log(body["name"]);
     // console.log('Body:', body);
   }
 });
