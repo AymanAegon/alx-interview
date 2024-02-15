@@ -1,4 +1,5 @@
-import request from 'request';
+const request = require('request');
+
 
 request('https://swapi-api.alx-tools.com/api/films/3', function (error, response, body) {
   if (error) {
