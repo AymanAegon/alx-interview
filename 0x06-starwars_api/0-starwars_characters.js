@@ -1,4 +1,3 @@
-const { channel } = require('diagnostics_channel');
 const request = require('request');
 
 
@@ -12,7 +11,7 @@ request('https://swapi-api.alx-tools.com/api/films/3', function (error, response
         if (error) {
           console.error('Error:', error);
         } else {
-          console.log(SON.parse(body)["name"]);
+          console.log(JSON.parse(body)["name"]); 
         }
       });
     });
