@@ -6,22 +6,18 @@
 
 def island_perimeter(grid):
     """returns the perimeter of the island described in grid"""
-    i = -1
-    j = -1
-    for row in grid:
-        for e in row:
-            if e == 1:
-                i = grid.index(row)
-                j = row.index(e)
-                break
-        if i != -1:
-            break
-    h = 1
+    h = 0
     w = 0
-    for row in range(i + 1, len(grid)):
-        if grid[row][j] == 0:
-            break
-        h += 1
+    arr = []
+    for row in grid:
+        if 1 in row:
+            arr.append(1)
+        else:
+            arr.append(0)
+    for e in arr:
+        if e == 1:
+            h += 1
+
     arr = [0] * len(grid[0])
     for row in grid:
         for e in range(len(row)):
