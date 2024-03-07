@@ -18,7 +18,7 @@ def island_perimeter(grid: List[List]):
         if i != -1:
             break
     h = 1
-    l = 1
+    w = 1
     for row in range(i + 1, len(grid)):
         if grid[row][j] == 0:
             break
@@ -28,6 +28,5 @@ def island_perimeter(grid: List[List]):
         for e in row:
             if e == 1:
                 k += 1
-        l = max(k, l)
-    return 2 * (h + l)
-
+        w = max(k, w)
+    return 2 * (h + w)
