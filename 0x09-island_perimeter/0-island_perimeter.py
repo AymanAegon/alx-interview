@@ -6,6 +6,8 @@
 
 def island_perimeter(grid):
     """returns the perimeter of the island described in grid"""
+    if len(grid) < 1:
+        return 0
     h = 0
     w = 0
     arr = []
