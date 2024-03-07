@@ -2,10 +2,9 @@
 """
 0. Island Perimeter
 """
-from typing import List
 
 
-def island_perimeter(grid: List[List]):
+def island_perimeter(grid):
     """returns the perimeter of the island described in grid"""
     i = -1
     j = -1
