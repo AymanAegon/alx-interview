@@ -20,6 +20,8 @@ def SieveOfEratosthenes(n):
 
 def isWinner(x, nums):
     """0. Prime Game"""
+    if x < 1 or not nums:
+        return None
     res = {'Maria': 0, 'Ben': 0}
     for n in nums:
         if n == 1:
